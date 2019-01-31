@@ -10,32 +10,41 @@
 </head>
 <body class="m-a-1">
   <div class="container">
-      <h3 class="panel-header">Grid Layout</h3>
-      <div id="gridContainer"> 
-      <div class="row">
-        <div class="col-sm-1">1</div> <!---если 768 пискселей-->
-        <div class="col-sm-1">1</div>
-        <div class="col-sm-2">2</div>
-        <div class="col-sm-2">2</div>        
-        <div class="col-sm-6">6</div>
-      </div>
-      <div class="row">
-        <div class="col-md-3">3</div> <!---если 940 пискселей-->
-        <div class="col-md-4">4</div>
-        <div class="col-md-5">5</div>
-      </div>
-      <div class="row">
-          <div class="col-md-6">6</div>
-          <div class="col-md-6">6</div>
-      </div>
-      <div class="row">
-          <div class="col-md-11">11</div>
-          <div class="col-md-1">1</div>
-      </div>
-      <div class="row">
-          <div class="col-sm-12">12</div>
-      </div>
-      
+    <h3 class="bg-primary"> Pavel's To Do List</h3>
+
+    <div class="col-xs-4">      
+        <form>
+          <div class="form-group">
+            <label> Task </label>
+            <input type="text" class="form-control">
+          </div>        
+          <div class="form-group">
+              <label> Location </label>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="checkbox" />
+              <label> Done </label>
+            </div>
+            <button class="btn btn-primary"> Add </button>
+        </form>
+    </div>
+    <div class="col-xs-8">
+      <table class="table table-bordered table-striped">
+        <thead> 
+          <tr>
+            <th>Description</th>
+            <th>Done</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>By Flowers</td><td>No</td></tr>
+          <tr><td>By Flowers</td><td>No</td></tr>
+          <tr><td>By Flowers</td><td>No</td></tr>
+          <tr><td>By Flowers</td><td>No</td></tr>
+        </tbody>
+      </table>
+
     </div>
   </div>
   <app-root></app-root>
