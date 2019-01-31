@@ -4,31 +4,40 @@
   <meta charset="utf-8">
   <title>HtmlCssPrimer</title>
   <base href="/">
-  <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body class="m-a-1">
-  <div class="container"> 
-    <h3 class="bg-primary p-a-1">To Do List</h3>
-    <form>
-      <div class="form-group">
-        <label> Task </label>
-        <input class="form-control" />
+  <div class="container">
+      <h3 class="panel-header">Grid Layout</h3>
+      <div id="gridContainer"> 
+      <div class="row">
+        <div class="col-sm-1">1</div> <!---если 768 пискселей-->
+        <div class="col-sm-1">1</div>
+        <div class="col-sm-2">2</div>
+        <div class="col-sm-2">2</div>        
+        <div class="col-sm-6">6</div>
       </div>
-      <div class="form-group">
-        <label> Location </label>
-        <input class="form-control" />
+      <div class="row">
+        <div class="col-md-3">3</div> <!---если 940 пискселей-->
+        <div class="col-md-4">4</div>
+        <div class="col-md-5">5</div>
       </div>
-      <div class="form-group">
-        <input type="checkbox">
-        <label> Done </label>
+      <div class="row">
+          <div class="col-md-6">6</div>
+          <div class="col-md-6">6</div>
       </div>
-      <button class="btn btn-primary"> Add </button>
-
-    </form>
+      <div class="row">
+          <div class="col-md-11">11</div>
+          <div class="col-md-1">1</div>
+      </div>
+      <div class="row">
+          <div class="col-sm-12">12</div>
+      </div>
+      
+    </div>
   </div>
-
   <app-root></app-root>
 </body>
 </html>
